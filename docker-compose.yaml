@@ -13,6 +13,4 @@ services:
     - "server:127.0.0.10"
     depends_on:
       - server
-    environment:
-      - SERVER_URL=http://server:8080
     command: ["python", "-u", "./agent.py"]
