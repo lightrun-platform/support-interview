@@ -5,12 +5,14 @@ services:
     build: ./server
     ports:
       - "8080:8080"
-    command: ["python", "-u", "./server.py"]
 
   agent:
     container_name: agent
     build: ./agent
+    extra_hosts:
+    - "server:127.0.0.10"
     depends_on:
       - server
     environment:
       - SERVER_URL=http://server:8080
+    command: ["python", "-u", "./agent.py"]
