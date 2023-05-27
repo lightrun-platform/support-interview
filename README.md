@@ -1,8 +1,10 @@
-# support-interview
+# Technical support interview challenge
 
-Hi, you got 2 containers, server and agent.
-Agent automatically is trying to connect to the server, but something went wrong.
-Fix all issues and start docker-compose, your purpose to see logs of agent where it prints: "Successfully connected"
+***
+Greetings, you're working with two containers: the server and the agent.
+The agent is programmed to automatically establish a connection with the server, but there seems to be a problem. Your task is to resolve these issues and initiate docker-compose. Your goal is to view the agent's logs, specifically looking for the message: "Successfully connected".
+
+***
 
 For building locally use:
 ```
